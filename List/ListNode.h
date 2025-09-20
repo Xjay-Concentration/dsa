@@ -7,7 +7,7 @@ template <typename T>
 struct ListNode {
     T data; ListNodePost(T) pred; ListNodePost(T) succ;
     
-    ListNode(T e, ListNode(T) p = NULL, ListNodePost(T) s = NULL)
+    ListNode(T e, ListNodePost(T) p = NULL, ListNodePost(T) s = NULL)
     : data(e), pred(p), succ(s) {}
     
     ~ListNode() {}
